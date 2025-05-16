@@ -12,7 +12,7 @@ license = "MIT"
 readme = "README.md"
 
 [dependencies]
-crossbeam-queue = "0.3"
+crossbeam-queue = { version = "0.3", default-features = false, features = ["alloc"] }
 
 [dev-dependencies]
 criterion = "0.4"
